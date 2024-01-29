@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocateMyLost</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100;1,400;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/form.css">
+    
+    
+</head>
+<body>
+    <!-- <h1>Harshit Dubey</h1>
+    <img src="Assets/College.jpeg" alt="" width="100%" class="bg-img"> -->
+
+    <div class="navbar">
+        <div class="left"><h2>LocateMyLost</h2></div>
+        <div class="right">
+            <ul>
+                <li><a href="/">About</a> </li>
+                <li><a href="/foundData">Found-Items</a> </li>
+                <li><a href="/lostdata">Lost-Items</a> </li>
+                <li><a href="/">Contact Us</a> </li>
+            </ul>
+            </div>
+    </div>
+
+    <div class="mainSection">
+
+        <div class="leftSection">
+            <h1>LocateMyLost</h1>
+            <p>This Project is made to </p>
+            <h1><span class="blue">
+                <span id="element"></span>
+            </span></h1>
+            <h5>This is a WebSite which helps people to locate their lost items .</h5>
+        </div>
+        <div class="rightSection">
+            <img src="/Assets/scoe.png" alt="">
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="sectionTwo">
+        <button class="lostButton" >
+            <h2>Click to Report the Lost Item </h2>
+        </button>
+
+        <button class="foundButton" >
+            <h2>Click to Report the Founded Item </h2>
+        </button>
+
+
+
+    <!-- Form One (Lost Item) -->
+
+    <div class="hidden modal ">
+        <div class="formSection">
+            <div class="login-container">
+                <h3>Report the Lost Item </h3>
+                <!-- <button class="close-modal">&times;</button> -->
+
+                <form action="/lostdata" method="post">
+                    <input type="text" class="login-input" placeholder="Username with Year & Branch eg :- ABCD (SY-AIML)" name="Username" required>
+                  <input type="tel" class="login-input" placeholder="Phone Number" name="Phone" required >
+                  <input type="text" class="login-input" placeholder="Item Lost" name="lostItem">
+
+                  <textarea name="key" class="login-input" cols="30" rows="3">
+1 : DD/MM/YY , 2 : Name of the item , 3 : Other important Information
+</textarea>
+
+                  <h6>Enter the item of image you Lost</h6>
+                  <input type="file" class="login-input" name="file" >
+                  <button type="submit" class="login-btn">Submit</button>
+                </form>
+              </div>
+        </div>
+    </div>
+    <div class="overlay hidden"></div>
+<!-- </div> -->
+
+
+
+<!-- Form Two (Found Item) -->
+
+<div class="modal2 hidden">
+    <div class="formSection">
+        <div class="login-container">
+            <h3>Report the Founded Item</h3>
+            <form action="/foundData" method="post">
+                <input type="text" class="login-input" placeholder="Username with Year & Branch eg :- ABCD (SY-AIML)" name="foundUsername" required>
+                <input type="tel" class="login-input" placeholder="Phone Number" name="foundPhone" required>
+                <input type="text" class="login-input" placeholder="Item Found" name="foundItem" required>
+                <textarea name="foundkey" class="login-input" cols="30" rows="3">
+1 : DD/MM/YY ,  2 : Name of the item , 3 : Other important Information
+                    </textarea>
+                <h6>Enter the item of image you found</h6>
+                <input type="file" class="login-input" >
+                <button type="submit" class="login-btn">Submit</button>
+              </form>
+        </div>
+    </div>
+</div>
+
+<div class="overlay2 hidden"></div>
+</div>
+
+<hr>
+
+<footer>
+    <div class="footer-padding"></div>
+  <div class="footer">
+    <p> &copy; CopyRight 2023 by Harshit Dubey</p>
+  </div>
+</footer>
+
+    <script src="/javascript/script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Find Your Belongings .'],
+          typeSpeed: 50,
+          loop : true ,
+        });
+      </script>
+</body>
+</html>

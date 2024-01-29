@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocateMyLost | Lost-Item </title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100;1,400;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/form.css">
+    <link rel="stylesheet" href="/css/items.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="left"><h2>LocateMyLost</h2></div>
+        <div class="right">
+            <ul>
+                <li><a href="/">Home</a> </li>
+                <li><a href="/foundData">Found-Items</a> </li>
+                <li><a href="/lostdata">Lost-Items</a> </li>
+                <li><a href="/">Contact Us</a> </li>
+            </ul>
+            </div>
+    </div>
+
+    <div class="items">
+        <h1>Lost Items</h1>
+        <p>Find Your Belongings Here .....</p>
+        <div class="underItems">
+            <% losts.forEach((lost)=>{ %>
+                <h2>UserName :-  <%= lost.username %> </h2> 
+                <p> Phonenumber :- <%= lost.Phonenumber%> </p>
+                <p> Item-Lost :-  <%= lost.lostItem%> </p>
+                <p>Keypoints :-  <%= lost.key%></p>
+                <hr>
+                <% }); %>
+        </div>
+    </div>
+</body>
+</html>

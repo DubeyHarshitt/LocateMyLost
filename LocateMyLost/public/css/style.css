@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height:auto;
+}
+
+body{
+    background-color:#2b6889;
+}
+
+hr{
+    border: 0;
+    border-radius: 15px;
+    background-color: #5b95b2;
+    height: 4px;
+    margin: 60px 80px;
+}
+
+.navbar{
+    background-color: #5b95b2; 
+    height: 85px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar ul { 
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    justify-content: center;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color:rgb(5, 50, 90);
+    font-size: 1.1rem;
+}
+
+.left{
+    font-size: 1.5rem;
+    color:white;
+}
+.mainSection{
+    justify-content: space-around;
+    display: flex;
+    margin: 70px 0;
+
+}
+.mainSection > div{
+    width: 30%;
+}
+
+.leftSection{
+    /* background-color: red; */
+    margin: 70px 0;
+    color: white;
+}
+.leftSection p{
+    margin: 20px 0;
+}
+
+.blue{
+    color: rgb(5, 50, 90);
+    text-shadow: 2px 2px #5b95b2;
+}
+.rightSection img{
+    width: 100%;
+    /* border:1px solid #fff; */
+    border-radius: 55px;
+    box-shadow: 8px 8px 10px #5b95b2;
+}
+
+.sectionTwo{
+    display: flex;
+
+    /* position: relative; */
+}
+.lostButton , .foundButton {
+    background-color: #5b95b2;
+    padding: 25px;
+    border: 2px solid rgb(5, 50, 90);
+    border-radius: 25px;
+    color: rgb(5, 50, 90);
+    width: 30vw;
+    display: flex;
+    margin:auto;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.lostButton:hover{
+    background-color: rgb(0, 65, 122);
+    color: white;
+    border: 1px solid white;
+}
+.foundButton:hover{
+    background-color: rgb(0, 65, 122);
+    color: white;
+    border: 1px solid white;
+}
+.hidden{
+    display: none;
+ }
+ .relative{
+    position: relative;
+} 
+.modal , .modal2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 50%; */
+    /* background-color: white; */
+    /* padding: 6rem; 
+    border-radius: 5px; */
+    /* box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3); */
+    z-index: 10;
+}
+.overlay , .overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+  }
+
+  /* .footer-padding {
+	padding-bottom: 60px;
+} */
+
+.footer {
+	text-align: center;
+    padding: 40px;
+	background-color: #5b95b2;
+}
+
+.footer p {
+	/* margin-top: 25px; */
+	font-size: 12px;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1400px) {
+    .navbar{
+        flex-direction: column;
+        padding-bottom: 25px;
+    } 
+    .left{
+        font-weight:lighter;
+        color:white;
+    }
+
+    .mainSection{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0 ;
+    }
+    .leftSection {
+        width:100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .leftSection p{
+        width: 80vw;
+        text-align: center;
+    }
+    .leftSection h5{
+        text-align: center;
+        justify-content: center;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .rightSection {
+        width: 80% !important;
+    }
+
+    .sectionTwo{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+    }
+    .lostButton , .foundButton{
+        padding: 25px;
+        width: 80vw;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+}

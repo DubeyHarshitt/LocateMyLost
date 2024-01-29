@@ -1,0 +1,16 @@
+body{
+    background-color:#2b6889;
+    color: white;
+}
+
+.items{
+    padding: 10%;
+}
+
+.underItems{
+    margin-top: 20px;
+    padding: 30px ;
+    border: 4px solid #5b95b2;
+    border-radius: 15px;
+}
+
