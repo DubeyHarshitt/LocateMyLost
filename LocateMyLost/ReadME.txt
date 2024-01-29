@@ -50,3 +50,8 @@ npm install express
 npm install body-parser
 npm install ejs
 npm install mongoose
+
+
+FOR DB CONNECTION 
+Bin :-  ./mongod --dbpath /Users/harshitdubey/db
+Folder :- mongosh
