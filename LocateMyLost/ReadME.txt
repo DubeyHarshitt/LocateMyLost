@@ -41,6 +41,10 @@ next step :- make a form
 
 frontend --> backend (server) --> database
 
+//----------------------------------------------------------------------------------------------------------------
+
+//TO START THE PROJECT 
+
 Npm init 
 npm install express 
 npm install body-parser
